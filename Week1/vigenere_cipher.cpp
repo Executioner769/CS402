@@ -1,7 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Enter plain text and key in Uppercase only
+string toUpperCase(string plain)
+{
+	string modified;
+    int i;
+    for (i = 0; i < plain.size(); i++) {
+        if (plain[i] > 91 && plain[i] < 128)
+            modified.push_back(plain[i] - 32);
+    }
+    return modified;
+}
 
 // Encrypt the text using Vigenere Cipher
 string encrypt(string str,string key) {
@@ -36,8 +45,12 @@ int main() {
 	string msg;
 	cin>>msg;
 
+	msg = toUpperCase(msg);
+
 	string key;
 	cin>>key;
+
+	key = toUpperCase(key);
 
 	string res;
 	res = encrypt(msg,key);

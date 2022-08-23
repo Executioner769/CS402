@@ -2,6 +2,16 @@
 using namespace std;
 
 // Enter the plain text in lowercase Only
+string toLowerCase(string plain)
+{
+	string modified;
+    int i;
+    for (i = 0; i < plain.size(); i++) {
+        if (plain[i] > 64 && plain[i] < 91)
+            modified.push_back(plain[i] + 32);
+    }
+    return modified;
+}
 
 // Convert Message to Cipher Text
 string encrypt(string s,int key) {
@@ -36,7 +46,7 @@ void attack(string s) {
 			temp = abs((((s[i] - 65) - k + 26) % 26 )) + 97;
 			str.push_back(temp);
 		}
-		cout<<k<<" "<<str<<endl;
+		cout<<k+1<<" "<<str<<endl;
 	}
 }
 
@@ -46,6 +56,8 @@ int main() {
 	cin>>key;
 
 	cin>>str;
+
+	str = toLowerCase(str);
 
 	string str2;
 	str2 = encrypt(str,key);
