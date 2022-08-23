@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Enter the plain text in lowercase Only
+
 // Convert Message to Cipher Text
 string encrypt(string s,int key) {
 	string cipher;
@@ -46,11 +48,17 @@ int main() {
 	cin>>str;
 
 	string str2;
-	// str2 = encrypt(str,key);
-	// str2 = decrypt(str,key);
+	str2 = encrypt(str,key);
+
+	cout<<"Cipher Text: "<<str2<<endl;
+
+	str2 = decrypt(str2,key);
+
+	cout<<"Message: "<<str2<<endl;
 
 	// cout<<str2<<endl;
 
+	cout<<"Brute Force Attack: "<<endl;
 	attack(str);
 
 	return 0;
