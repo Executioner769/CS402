@@ -1,0 +1,3 @@
+1. Implement Triple DES
+
+2. Try all the weak keys on DES and 3DES, and note the round keys of each Weak key
