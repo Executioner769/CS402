@@ -1,0 +1,4 @@
+Implement the below:
+
+1. Diffie Hellman Key Exchange protocol
+2. Elgamal cryptosystem and write remarks on what happens if C1 and C2 are swapped during the transmission.
