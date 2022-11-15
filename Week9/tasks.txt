@@ -1,0 +1,5 @@
+Implement the below:
+
+
+1. Implement SHA-1  
+2. Implement Kerberos Authentication Protocol
