@@ -1,0 +1,10 @@
+1. Design and implement a communication system with the following details
+• The users are divided logically into groups.
+• Each user can have many public and private key pairs.
+• Each user maintains a table in which the public key is stored.
+• Each user maintains private keys in another table along with the id of the public key
+which is in encrypted form.
+• The encryption and decryption are based on the public key id sent along with the cipher
+text. Use any public key cryptography for encryption and decryption
+
+2. Explore Packet sniffing tools and make a report with practical screenshots possibly
